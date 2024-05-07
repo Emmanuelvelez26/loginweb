@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login web</title>
+</head>
+<h1 style="text-align: center;">INICIA SESION</h1>
+
+<body style="background-color: rgb(182, 219, 186);">
+<SCRIPT  language=JavaScript> 
+function go(){
+
+if (document.form.password.value=='4545' && document.form.login.value=='camilo'){ 
+        document.form.submit(); 
+    } 
+    else{ 
+         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+    } 
+} 
+</SCRIPT> 
+<FORM name=form action="bienvenida.html">
+
+<P style="text-align: center;">Usuario:    <INPUT type=text name=login> 
+<P style="text-align: center;">Contraseña: <INPUT type=password name=password> 
+<INPUT style="background-color: aquamarine;" onclick=go() type=button value=Acceder>
+
+</FORM> 
+</body>
+</html>
